@@ -1,0 +1,218 @@
+/*----------最外層----------*/
+.main{
+    display: flex;
+    justify-content: center;
+}
+.about{
+    width: 100%;
+/*    background-color: antiquewhite;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+@media screen and (min-width:768px){
+    .about{
+        width: 80%;
+        max-width: 1140px;
+    }
+}
+/*----------一起使用的----------*/
+.about_hr{
+    width: 100%;
+    border-radius: 50px;
+    height: 2px;
+    background-color: #789626;
+    margin: 40px auto;
+    display: none;
+}
+@media screen and (min-width:768px){
+    .about_hr{
+        display: block;
+    }
+}
+h3{
+    height: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 8%;
+    color: #2F391A;
+    font-weight: 400;
+/*    background-color: antiquewhite;*/
+}
+.discription{
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    max-width: 400px;
+}
+.discription>p{
+/*    background-color: firebrick;*/
+    line-height: 200%;
+    font-size: 1rem;
+    color: #2F391A;
+    text-align: center;
+}
+.discription>p>br{
+    display: none;
+}
+@media screen and (min-width:768px){
+    h3{
+        font-size: 1.8rem;
+        height: 35px;
+        margin-bottom: 4%;
+    }
+    .discription{
+        max-width: none;
+        margin: inherit;
+    }
+    .discription>p{
+        line-height: 180%;
+    }
+}
+@media screen and (min-width:900px){
+    .discription>p>br{
+        display: block;
+    }
+}
+/*----------起源----------*/
+.origin{
+    width: 100%;
+    height: 90vh;
+    min-height: 600px;
+    max-height: 700px;
+}
+.about_bgi.bgi01{
+    background-image: url(../images/about/about-01.jpg);
+    height: 40%;
+}
+.origin>.discription{
+/*    background-color: aquamarine;*/
+    height: 60%;
+}
+.plus{
+    height: auto;
+/*    background-color: dimgrey;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 10% 0;
+    max-width: 300px;
+}
+.plus>p{
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: "微軟正黑體";
+/*    background-color: antiquewhite;*/
+}
+.plus>p>span{
+    font-size: 0.8rem;
+    font-family: "微軟正黑體";
+/*    background-color: blueviolet;*/
+}
+.equal{
+    font-family: "微軟正黑體";
+    padding: 0 8px 0 0 ;
+}
+@media screen and (min-width:768px){
+    .origin{
+        width: 80%;
+        height: 80vh;
+        max-width: 600px;
+        min-height: 550px;
+    }
+    .about_bgi.bgi01{
+        height: 50%;
+    }
+    .origin>.discription{
+        height: 50%;
+    }
+    .plus{
+        padding: 3% 0 6% 0;
+    }
+}
+/*----------內容----------*/
+.content{
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    max-height: 600px;
+/*    border: 1px solid black;*/
+}
+.about_bgi{
+/*    background-color: dimgrey;*/
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+.content>.discription{
+/*    background-color: aqua;*/
+    height: 50%;  
+}
+@media screen and (min-width:768px){
+    .content{
+        height: 40vh;
+        min-height: 300px;
+        max-width: 600px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .content02{
+        flex-direction: row-reverse;
+        margin-bottom: 5vh;
+    }
+    .content>.about_bgi{
+        width: 40%;
+        height: 100%;
+/*        background-size: contain;*/
+        background-repeat: no-repeat;
+    }
+    .content>.discription{
+        width: 50%;
+        height: 100%;
+    }
+    .content01>.discription{
+        justify-content: space-between;
+/*        border: 3px solid black;*/
+        padding-top: 15%;
+    }
+    .content02>.discription{
+        justify-content: space-around;
+        padding: 10% 0;
+    }
+    .content03>.discription{
+        justify-content: space-around;
+        padding: 5%;
+    }
+}
+/*----------背景圖們----------*/
+.about_bgi.bgi02{
+    background-image: url(../images/about/about-02.jpg);
+}
+.about_bgi.bgi03{
+    background-image: url(../images/about/about-03.jpg);
+    display: none;
+}
+.about_bgi.bgi04{
+    background-image: url(../images/about/about-03.jpg);
+}
+.about_bgi.bgi05{
+    background-image: url(../images/about/about-05.jpg);
+}
+@media screen and (min-width:768px){
+    .about_bgi.bgi03{
+        display: block;
+        height: 35vh;
+        margin: 10vh 0;
+        max-width: 600px;
+        min-height: 270px;
+    }
+    .about_bgi.bgi04{
+        background-image: url(../images/about/about-04.jpg);
+    }
+}

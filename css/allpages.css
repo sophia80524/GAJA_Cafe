@@ -1,0 +1,35 @@
+@media screen and (min-width:768px){
+    body{
+        background-image: url(../images/icons/plants-03.svg);
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 0px;
+    color: #2F391A;
+    font-weight: 300;
+}
+@media screen and (min-width:768px){
+    h2{
+        font-size: 2em;
+        padding: 40px 0;
+    }
+}
+h3{
+    color: #2F391A;
+    font-size: 1.1em;
+}
+p{
+    font-size: 0.9em;
+    color: #2F391A;
+}
+
+
+
+.slick-prev:before { content: "‹"; font-size: 60px;}
+.slick-next:before { content: "›"; font-size: 60px;}

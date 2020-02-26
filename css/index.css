@@ -1,0 +1,291 @@
+/*--------------------header修改區-------*/
+@media screen and (min-width:768px){
+    header{
+        margin-top: 13vh; 
+    }
+    header.header_top{
+        margin-top: 0px;
+    }
+    .white_bar{
+        background-color:transparent;
+    }
+    .white_bar_top{
+        background-color:#F3F3F4;
+    }
+    header nav{
+        height: 100vh;
+    }
+    header ul{
+        margin-top: -40px;
+        align-items: flex-end;
+        height: 88vh;
+        min-height: 370px;
+/*        background-color: antiquewhite;*/
+    }
+    header .pt-20 {
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 70px;
+        min-height:inherit;
+    }
+    header li.logo_down{
+        align-self: self-start;
+        margin-top:-50px;
+    }
+    header li.logo_down.logo_down_top{
+        margin-top:-40px;
+    }
+    header li.item_bg.item_bgc:nth-child(1),header li.item_bg.item_bgc:nth-child(2),header li.item_bg.item_bgc:nth-child(4),header li.item_bg.item_bgc:nth-child(5){
+        background: linear-gradient(rgba(255, 255, 255, 0)0%, #ffffff 40%);
+        background: -moz-linear-gradient(rgba(255, 255, 255, 0)0%, #ffffff 40%);
+        background: -webkit-linear-gradient(rgba(255, 255, 255, 0)0%, #ffffff 40%);
+        background: -o-linear-gradient(rgba(255, 255, 255, 0)0%, #ffffff 40%);
+    }
+    header .banner{
+        height: 70vh;
+    }
+}/*header修改區end*/
+/*--------------------index "HR" 區-------*/
+.index_hr{
+/*    width: 80%;*/
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px #8d8d8d;
+    margin: 0 auto;
+}
+.main_hr{
+    width: 70%;
+    border: 0;
+    border-radius: 50px;
+    height: 2px;
+    background-color: #789626;
+    margin: 40px auto;
+    display: none;
+}
+@media screen and (min-width:768px){
+    .main_hr{
+        display: block;
+    }
+}
+/*--------------------index "內部" 區-------*/
+.main{
+/*    background-color: dimgray;*/
+/*    height: 3000px;*/
+}
+#news{
+    margin: 30px auto;
+/*    border: 2px solid red;*/
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+#products{
+/*    border: 2px solid blue;*/
+    background-color: #FEF9F4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#locations{
+    width: 85%;
+    max-width: 1140px;
+    margin: 30px auto;
+/*    border: 2px solid orange;*/
+    overflow: hidden;
+}
+@media screen and (min-width:768px){
+    .main.main_down{
+        margin-top: 200px;
+    }
+}
+/*--------------------index ".news" 區-------*/
+.news{
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.news_banner{
+    width: 100%;
+    height: auto;
+}
+.news_banner img{
+    width: 100%;
+    height: auto;
+}
+.news_banner p{
+    line-height: 50px;
+    text-align: center;
+    color: #2F391A;
+    font-size: 1.3em;
+    letter-spacing: 5px;
+}
+.news .slick-dots{
+    position: absolute;
+    bottom: 60px;
+}
+@media screen and (min-width:768px){
+    .news{
+        width: 80%;
+    }
+    .slick-prev:before, .slick-next:before {
+        display: block;
+        color: #B1D8D4;
+    }
+    .news_banner p{
+        background-color: #FEF9F4;
+        letter-spacing: 10px;
+        padding: 20px 0;
+    }
+    .news .slick-dots{
+        bottom: 100px;
+    }
+}
+/*--------------------index ".products" 區-------*/
+.steps{
+/*    background-color: aqua;*/
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+.steps>li{
+/*    background-color: indianred;*/
+    width: 100%;
+    height: 70px;
+}
+.steps>li a{
+/*    background-color: dodgerblue;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.steps>li img{
+    height: 100%;
+    margin: 0 20px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    margin-left: -60px;
+}
+.arrow>img{
+    width: 100%;
+    height: 100%;
+   transform:rotate(90deg);
+    transition: all 0.5s;
+}
+.step_description{
+    display: none;
+}
+@media screen and (min-width:768px){
+    #products{
+        padding: 50px 0px;
+        background-color: transparent;
+    }
+    .steps{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 50%;
+        height: 150px;
+        min-width: 500px;
+        max-width: 800px;
+    }
+    .steps>li{
+        width: 20%;
+        height: 90%;
+    }
+    .steps>li a{
+        flex-direction: column;
+    }
+    .steps>li a img{
+/*        background-color: antiquewhite;*/
+        height: 80%;
+        margin: 10px 0;
+    }
+    .steps>li a p {
+        font-weight: 300;
+        color: #5F3514;
+    }
+    .arrow{
+        transform:rotate(-90deg);
+        margin: 0;
+    }
+    .step_description{
+        display: block;
+        text-align: center;
+        line-height:60px;
+        font-size: 1.1em;
+        color: #2F391A;
+    }
+}
+/*--------------------index ".locations" 區-------*/
+.stores{
+    width: 100%;
+    height: auto;
+/*    background-color: aqua;*/
+}
+.store{
+    display: block;
+    width: 80%;
+    height: 500px;
+/*    background-color: forestgreen;*/
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.store>img{
+    width: 100%;
+    height: auto;
+}
+.store_hr{
+    width: 80%;
+    border: 0;
+    height: 2px;
+    background-color: #789626;
+    margin-bottom: 15px;
+}
+.store .description{
+    width: 100%;
+    background-color: #FEF9F4;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.store .description h3{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 0px;
+    color: #2F391A;
+    letter-spacing: 3px;
+}
+.store .description span{
+/*    background-color: aqua;*/
+    font-size: 0.9em;
+    line-height: 30px;
+    color: #AC8A67;
+    text-align: right;
+}
+.store_add{
+    margin-top: -15px;
+    letter-spacing: 1.5px;
+}
+@media screen and (min-width:560px){
+    .store{
+        height: 100%;
+        margin: 0 5px;
+        position: static;
+    }
+    .store .description{
+        position: static;
+    }
+}
+
+

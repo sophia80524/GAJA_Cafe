@@ -1,0 +1,76 @@
+#locations{
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stores{
+    width: 80%;
+/*    background-color: aqua;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.store{
+    width: 100%;
+    margin: 1% 0;
+    max-width: 375px;
+/*    flex: 0 0 calc(100% / 3 - 30px);*/
+}
+.store>img{
+    width: 100%;
+    height: auto;
+/*    border-radius: 400px 30px 400px 30px;*/
+}
+/*敘述區*/
+.store>.description{
+    width: 100%;
+    background-color: #FEF9F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.store .description h3{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 0px;
+    color: #2F391A;
+    letter-spacing: 3px;
+}
+.store_hr{
+    width: 80%;
+    border: 0;
+    height: 2px;
+    background-color: #789626;
+    margin-bottom: 15px;
+}
+.store .description span{
+/*    background-color: aqua;*/
+    font-size: 0.9em;
+    line-height: 30px;
+    color: #AC8A67;
+    text-align: right;
+}
+.store_add{
+    margin-top: -15px;
+    letter-spacing: 1.5px;
+}
+@media screen and (min-width:620px){
+    .stores{
+        justify-content: flex-start;
+    }
+    .store{
+        width: 48%;
+        margin: 1%;
+    }
+}
+@media screen and (min-width:900px){
+   .store{
+        width: 31%;
+       margin: 1% 1.16%;
+    }
+}
